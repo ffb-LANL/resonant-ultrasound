@@ -1,0 +1,16 @@
+"Self-addresed Msg" is a child class of Message. It is a way for caller actor to provide
+recipient actor with ability to reply to some one other than recipient's creator.
+The Self-addresed Msg message object is prepared by caller
+The recipient invokes Self-addresed Msg:Reply which sends the object back via stored Return Enquerer
+
+"Result Reply Msg" is a child class of Self-addresed Msg. It adds an ability to attach a Result obtained by recipinet
+
+
+"Result Responce Msg" is a child class of "Result Reply Msg"
+Result Responce Msg:Do invokes Message Controller:Result Responce method
+Message Controller prepares "Result Responce Msg" and messages recipinets Intialize and Acquire methods. 
+The Message Controller actor then expects to recieve a reply via call to Result Responce Msg:Reply with Result 
+
+The 1st two classes are abstract, since they do not ovewrite Message:Do which does not invoke any methods
+   
+

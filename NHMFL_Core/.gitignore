@@ -1,0 +1,20 @@
+# Libraries
+*.lvlibp
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+
+# Metadata
+*.aliases
+*.lvlps
+
+#folders
+Applications/builds
+Libraries/builds
+Libraries/GaGe-DAQ/CompuScope_LabVIEW_SDK

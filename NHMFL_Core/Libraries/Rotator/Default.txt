@@ -1,0 +1,6 @@
+Microsteping=10 (2000 steps per one motor shaft turn)
+Run current=0.5A
+Idle current=0.4A
+Idle time 1 centi-sec
+Steps per degree=780
+
