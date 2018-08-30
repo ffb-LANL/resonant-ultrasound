@@ -12,6 +12,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="ConvertToLakeShore340Format.vi" Type="VI" URL="../ConvertToLakeShore340Format.vi"/>
+		<Item Name="Defragment TDMS.vi" Type="VI" URL="../Defragment TDMS.vi"/>
 		<Item Name="Impedance Correction.vi" Type="VI" URL="../Impedance Correction.vi"/>
 		<Item Name="NeoceraLoadCalibration.vi" Type="VI" URL="../NeoceraLoadCalibration.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -120,6 +121,50 @@
 				<Property Name="TgtF_productName" Type="Str">340Converter</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{9D009A45-06E4-4CBC-9086-12207B316F7B}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">340Converter.exe</Property>
+			</Item>
+			<Item Name="Defragment TDMS" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{6527D384-4903-4621-A2D8-3078342E1F7E}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{40F7EC70-883C-4951-B1C4-334B37B832D9}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_winsec.description" Type="Str">http://www.LANL.com</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{63240F39-6448-4480-99D3-49D23F8C6B33}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Defragment TDMS</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/github/builds/LabActor</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{B137CE43-808F-4507-BF18-4DC9ECD52220}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Defragment TDMS.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/github/builds/LabActor/Defragment TDMS.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/github/builds/LabActor/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7F5792AD-9971-4686-B392-9C0848EFF5F6}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Defragment TDMS.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">LANL</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Defragment TDMS</Property>
+				<Property Name="TgtF_internalName" Type="Str">Defragment TDMS</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 LANL</Property>
+				<Property Name="TgtF_productName" Type="Str">Defragment TDMS</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{01CE88D1-187B-4B4F-AD6B-5B96F86E47E2}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Defragment TDMS.exe</Property>
 			</Item>
 			<Item Name="Impedance Correction" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
