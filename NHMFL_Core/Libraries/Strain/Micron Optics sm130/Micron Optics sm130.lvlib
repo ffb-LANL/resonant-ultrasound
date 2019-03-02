@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="16008000">
+<Library LVVersion="18008000">
 	<Property Name="Instrument Driver" Type="Str">True</Property>
 	<Property Name="NI.Lib.Description" Type="Str">LabVIEW Plug and Play instrument driver for
 Micron Opics sm130 Optical Sensing Interrogator.</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*1!!!*Q(C=\:1R&lt;O.!$%6`AB2J@9!!#R?Z!-M5;8Q&amp;8Y&amp;8=/P3&gt;4J?15$+&lt;6:89,6QND.S!`=J&amp;ML4C(&amp;5R=U'W!#:-78JEU-_T9R';OV;ON*QLOU`&lt;--ALJAUFT5^;`3X?\7AEXNSUM@R5Z`'D&amp;S6=0`GXZ`]_`@9W@CX_JL\4`80]H`9PPX@`K`N0^/)W:Y._O1G8423,,(!(,0W&gt;E/C*XKC*XKC*XKA"XKA"XKA"\KD/\KD/\KD/\KB'\KB'\KB'XLL[%)8ON#:F;2Y5CB*GC2)AE&amp;2=EFY%J[%*_(B51F0QJ0Q*$Q*$S&amp;+?"+?B#@B38A9JI1HY5FY%J[%BV3.*&amp;N(BS@B)&lt;U#HI!HY!FY!BZ++O!*!)*C1?)A#2A+H-&amp;.Q"0Q"$T=+O!*?!+?A#@AQ;W!*_!*?!+?A)=B&lt;6;CU9Q&gt;(2\3S/&amp;R?"Q?B]@B)&lt;5=(I@(Y8&amp;Y("\+S?&amp;R?"Q)J[#4(!1ZAZQ!Z](B=8DYE]0D]$A]$I`$A[ONE,?:'7H'DA[0Q70Q'$Q'D]&amp;$#BE]"I`"9`!90+36Q70Q'$Q'D]&amp;$+2E]"I`"9Y!923EP)ZERU!AS")/(8^MNVF9J'IGV8J`GN&amp;&amp;6'V#VM61&lt;2L526!OM7DD6AKAG7D7"KIF2P&lt;$K263!KM+KB+J!(&lt;E?M"\LM"WWQ&gt;&lt;9#FNCCX(I0QY](I][(!\K_VZ&gt;VWGXWWGTW7C^8GOV7GGZ8'KR7*R/KR`UK6X-T[8_`O`&gt;Q`0,5`@\ZO?P0Y^0`?XDX;BPC@MMG][F`_&amp;MV+7'W4(0(,U#;@W&amp;CA!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*1!!!*Q(C=\:1R&lt;O.!$%6`AB2J@9!!#R?Z!-M5;8Q&amp;8Y&amp;8=/P3&gt;4J?15$+&lt;6:89,6QND.S!`=J&amp;ML4C(&amp;5R=U'W!#:-78JEU-_T9R';OV;ON*QLOU`&lt;--ALJAUFT5^;`3X?\7AEXNSUM@R5Z`'D&amp;S6=0`GXZ`]_`@9W@CX_JL\4`80]H`9PPX@`K`N0^/)W:Y._O1G8423,,(!(,0W&gt;E/C*XKC*XKC*XKA"XKA"XKA"\KD/\KD/\KD/\KB'\KB'\KB'XLL[%)8ON#:F;2Y5CB*GC2)AE&amp;2=EFY%J[%*_(B51F0QJ0Q*$Q*$S&amp;+?"+?B#@B38A9JI1HY5FY%J[%BV3.*&amp;N(BS@B)&lt;U#HI!HY!FY!BZ++O!*!)*C1?)A#2A+H-&amp;.Q"0Q"$T=+O!*?!+?A#@AQ;W!*_!*?!+?A)=B&lt;6;CU9Q&gt;(2\3S/&amp;R?"Q?B]@B)&lt;5=(I@(Y8&amp;Y("\+S?&amp;R?"Q)J[#4(!1ZAZQ!Z](B=8DYE]0D]$A]$I`$A[ONE,?:'7H'DA[0Q70Q'$Q'D]&amp;$#BE]"I`"9`!90+36Q70Q'$Q'D]&amp;$+2E]"I`"9Y!923EP)ZERU!AS")/(8^MNVF9J'IGV8J`GN&amp;&amp;6'V#VM61&lt;2L526!OM7DD6AKAG7D7"KIF2P&lt;$K263!KM+KB+J!(&lt;E?M"\LM"WWQ&gt;&lt;9#FNCCX(I0QY](I][(!\K_VZ&gt;VWGXWWGTW7C^8GOV7GGZ8'KR7*R/KR`UK6X-T[8_`O`&gt;Q`0,5`@\ZO?P0Y^0`?XDX;BPC@MMG][F`_&amp;MV+7'W4(0(,U#;@W&amp;CA!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">402685952</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.1.0.0</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Public" Type="Folder">
