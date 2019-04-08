@@ -5,7 +5,7 @@ Resonant Ultrasound Spectroscopy Software
 Copyright and license
 ---------------------
 
-Los Alamos National Security, LLC (LANS) owns the copyright to Resonant Ultrasound Spectroscopy hardware schematics and software suite.  The license is BSD-ish with a "modifications must be indicated" clause.
+Triad National Security, LLC. owns the copyright to Resonant Ultrasound Spectroscopy hardware schematics and software suite.  The license is BSD-ish with a "modifications must be indicated" clause.
 
 ## Los Alamos C# Number
 C17076
