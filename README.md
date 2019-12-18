@@ -11,16 +11,16 @@ Triad National Security, LLC. owns the copyright to Resonant Ultrasound Spectros
 C17076
 
 ## Instalation and Start-up
-
-1. Run ResonanceSpetrometer Installer.exe
-1. Write rus.img to microSD card using imager software (e.g. Win32 Disk Imager)
-2. Insert microSD card into Red Pitaya (with microSD contacts facing up), power it up.
-3. Connect Red Pitaya Ethernet port to a PC on the same network subnet. Default Red Pitaya IP is 192.168.1.100
-7. Connect Red Pitaya Out 1  and In 1 SMA connectors to experiment.
-8. Start ResonanceSpetrometer.exe
-9. Select suitable start, end, time constant, duration etc parameters in Spectrum Recorder module
-10. Click "Start" on the main panel.
-11. The spectrum data is saved in files shown in "Spectrum file" indicator in Spectrum Recorder module. TDMS files can be opened in Labview, Origin v 9.2 and later, Excel. etc.
+1. Install LabVIEW runtime engine 2019 64bit (do not install SP1 version)
+2. Run ResonanceSpetrometer Installer.exe
+3. Write rus.img to microSD card using imager software (e.g. Win32 Disk Imager)
+4. Insert microSD card into Red Pitaya (with microSD contacts facing up), power it up.
+5. Connect Red Pitaya Ethernet port to a PC on the same network subnet (e.g. 192.168.1.1. Default Red Pitaya IP is 192.168.1.100)
+6. Connect Red Pitaya Out 1  and In 1 SMA connectors to experiment.
+7. Start ResonanceSpetrometer.exe
+8. Select suitable start, end, time constant, duration etc parameters in Spectrum Recorder module
+9. Click "Start" on the main panel.
+10. The spectrum data is saved in files shown in "Spectrum file" indicator in Spectrum Recorder module. TDMS files can be opened in Labview, Origin v 9.2 and later, Excel. npTDMS phyton etc.
 
 ## Network settings:
-The default Red Pitaya image configured with static IP 192.168.1.100 for Ethernet port.  The network settings can be changed by logging into Red Pitaya, e.g. using Putty, and editing /etc/dhcp/dhclient.conf, e.g. ìvi /etc/dhcp/dhclient.confî
+The default Red Pitaya image configured with static IP 192.168.1.100 for Ethernet port.  The network settings can be changed by logging into Red Pitaya, e.g. using Putty, and editing /etc/dhcp/dhclient.conf, e.g. ‚Äúvi /etc/dhcp/dhclient.conf‚Äù
