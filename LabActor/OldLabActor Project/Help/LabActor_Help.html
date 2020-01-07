@@ -23,19 +23,20 @@ w\:* {behavior:url(#default#VML);}
 <!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Author>Fedor Balakirev</o:Author>
-  <o:LastAuthor>Fedor Balakirev</o:LastAuthor>
-  <o:Revision>15</o:Revision>
-  <o:TotalTime>1294</o:TotalTime>
+  <o:LastAuthor>Balakirev, Fedor Fedorovich</o:LastAuthor>
+  <o:Revision>29</o:Revision>
+  <o:TotalTime>1372</o:TotalTime>
+  <o:LastPrinted>2019-12-18T19:28:00Z</o:LastPrinted>
   <o:Created>2017-04-28T17:43:00Z</o:Created>
-  <o:LastSaved>2017-05-25T16:30:00Z</o:LastSaved>
-  <o:Pages>8</o:Pages>
-  <o:Words>1662</o:Words>
-  <o:Characters>9361</o:Characters>
+  <o:LastSaved>2019-12-18T19:33:00Z</o:LastSaved>
+  <o:Pages>9</o:Pages>
+  <o:Words>1845</o:Words>
+  <o:Characters>10519</o:Characters>
   <o:Company>LANL</o:Company>
-  <o:Lines>624</o:Lines>
-  <o:Paragraphs>334</o:Paragraphs>
-  <o:CharactersWithSpaces>10689</o:CharactersWithSpaces>
-  <o:Version>15.00</o:Version>
+  <o:Lines>87</o:Lines>
+  <o:Paragraphs>24</o:Paragraphs>
+  <o:CharactersWithSpaces>12340</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
@@ -46,7 +47,6 @@ w\:* {behavior:url(#default#VML);}
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Print</w:View>
-  <w:Zoom>130</w:Zoom>
   <w:SpellingState>Clean</w:SpellingState>
   <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
@@ -655,7 +655,14 @@ w\:* {behavior:url(#default#VML);}
 	mso-font-charset:0;
 	mso-generic-font-family:roman;
 	mso-font-pitch:variable;
-	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{mso-style-unhide:no;
@@ -685,8 +692,7 @@ h2
 	mso-fareast-theme-font:minor-fareast;
 	font-weight:bold;}
 p
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
+	{mso-style-priority:99;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
 	mso-margin-bottom-alt:auto;
@@ -694,6 +700,17 @@ p
 	mso-pagination:widow-orphan;
 	font-size:12.0pt;
 	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
 span.MsoPlaceholderText
@@ -722,6 +739,35 @@ span.Heading2Char
 	color:#2E74B5;
 	mso-themecolor:accent1;
 	mso-themeshade:191;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-ascii-font-family:"Segoe UI";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Segoe UI";
+	mso-bidi-font-family:"Segoe UI";}
 span.SpellE
 	{mso-style-name:"";
 	mso-spl-e:yes;}
@@ -780,717 +826,13 @@ style='mso-fareast-font-family:"Times New Roman"'>LabActor</span></span><span
 style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
 
 <p>Main control module &#8211; select and access measurement modules, control
-measurements etc. </p>
-
-<p><span style='mso-no-proof:yes'><img width=708 height=302 id="_x0000_i1087"
-src="LabActor_lvclass_Actor_Corep.png" alt="LabActor.lvclass:Actor Core.vi"></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><o:p>&nbsp;</o:p></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><o:p>&nbsp;</o:p></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1086"
-  src=c1dstr.png alt=c1dstr></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Monitor
-  </span></b><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
-  <p>List of active measurement modules</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1085"
-  src=cbool.png alt=cbool></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Start
-  </span></b><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
-  <p>Start measurement</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1084"
-  src=cbool.png alt=cbool></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Stop
-  </span></b><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
-  <p>Stop measurement</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1083"
-  src=cbool.png alt=cbool></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>View
-  </span></b><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
-  <p>View Monitor data file</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1082"
-  src=cbool.png alt=cbool></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Read
-  <span class=SpellE>cfg</span></span></b><span style='mso-fareast-font-family:
-  "Times New Roman"'> <o:p></o:p></span></p>
-  <p>Read application configuration from file</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1081"
-  src=cbool.png alt=cbool></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Write
-  <span class=SpellE>cfg</span></span></b><span style='mso-fareast-font-family:
-  "Times New Roman"'> <o:p></o:p></span></p>
-  <p>Write application configuration to file</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1080"
-  src=cbool.png alt=cbool></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Monitor
-  configuration</span></b><span style='mso-fareast-font-family:"Times New Roman"'>
-  <o:p></o:p></span></p>
-  <p>Open Monitor configuration</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1079"
-  src=cbool.png alt=cbool></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Exit</span></b><span
-  style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Exit application</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1078"
-  src=cbool.png alt=cbool></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Clear
-  log</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Clear error log</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1077"
-  src=ibool.png alt=ibool></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Monitor
-  Running</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Measurement state</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1076"
-  src=ipath.png alt=ipath></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Monitor
-  File</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Latest Monitor data file</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1075"
-  src=istr.png alt=istr></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Error
-  log</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  </td>
- </tr>
-</table>
-
-<div class=MsoNormal align=center style='text-align:center'><span
-style='mso-fareast-font-family:"Times New Roman"'>
-
-<hr size=2 width="100%" align=center>
-
-</span></div>
-
-<h2><a name="Monitor_Controller.lvclass:Actor_Core.vi"></a><span
-style='mso-fareast-font-family:"Times New Roman"'>Monitor <o:p></o:p></span></h2>
-
-<p>Configure measurement flow</p>
-
-<p><span style='mso-no-proof:yes'><img width=144 height=233 id="_x0000_i1074"
-src="Monitor_Controller_lvclass_Actor_Corep.png"
-alt="Monitor Controller.lvclass:Actor Core.vi"></span></p>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1073"
-  src=ccclst.png alt=ccclst></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Configuration</span></b><span
-  style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Monitor configuration</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1072"
-  src=cdbl.png alt=cdbl></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Update
-  period</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Request data collection this often</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1071"
-  src=ci32.png alt=ci32></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Repeat
-  times</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Complete this many measurements then stop (or keep going if &lt;0)</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1070"
-  src=cbool.png alt=cbool></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Open
-  plot</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Open new Monitor data plot on start</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1069"
-  src=cdbl.png alt=cdbl></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>File
-  defragment period</span></b><span style='mso-fareast-font-family:"Times New Roman"'>
-  <o:p></o:p></span></p>
-  <p>Defragment Monitor data file this often when running</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<div class=MsoNormal align=center style='text-align:center'><span
-style='mso-fareast-font-family:"Times New Roman"'>
-
-<hr size=2 width="100%" align=center>
-
-</span></div>
-
-<h2><a name="Spectrum_Recorder_too.lvclass:Actor_Core"></a><span
-style='mso-fareast-font-family:"Times New Roman"'>Spectrum Recorder<o:p></o:p></span></h2>
-
-<p>Spectrum Recorder module sweeps frequency and records complex response using
-Red Pitaya. The sweep frequency increment is either uniform and equal to
-Frequency step, or equal to Frequency step<span style='mso-no-proof:yes'> only
-inside defined focus regions and </span>Frequency step*acceleration factor
-elsewhere<span style='mso-no-proof:yes'><o:p></o:p></span></p>
-
-<p><span style='mso-no-proof:yes'><img width=644 height=441 id="_x0000_i1068"
-src="../../Documentation/Draft/Spectrum_Recorder_too_lvclass_Actor_Corep.png"
-alt="Spectrum Recorder too.lvclass:Actor Core.vi"></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 width=593 style='width:445.0pt;
- mso-cellspacing:1.5pt;margin-left:27.75pt;mso-yfti-tbllook:1184;mso-padding-alt:
- 0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td width=3 valign=top style='width:2.5pt;padding:.75pt .75pt .75pt .75pt'>
-  <p><o:p>&nbsp;</o:p></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><o:p>&nbsp;</o:p></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1067"
-  src=ccclst.png alt=ccclst></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Configuration</span></b><span
-  style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Spectrum recorder configuration</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1066"
-  src=cdbl.png alt=cdbl></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Start
-  frequency</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Spectrum starting frequency</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1065"
-  src=cdbl.png alt=cdbl></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>End
-  frequency</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Spectrum ending frequency</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1064"
-  src=cdbl.png alt=cdbl></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Frequency
-  step</span></b><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
-  <p>Minimal frequency increment</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1063"
-  src=cdbl.png alt=cdbl></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Point
-  interval</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Interval between frequency increments</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1062"
-  src=cstr.png alt=cstr></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Address</span></b><span
-  style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Network address of Red Pitaya</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1061"
-  src=cbool.png alt=cbool></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Open
-  plot</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Open new spectrum plot window at the start of measurements</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 width=770 style='width:577.55pt;
- mso-cellspacing:1.5pt;margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:
- 0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><o:p>&nbsp;</o:p></p>
-  </td>
-  <td width=33 valign=top style='width:24.65pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-no-proof:yes'><img width=32 height=16
-  id="_x0000_i1060" src="../../Documentation/Draft/c1ddbl.png" alt=c1ddbl></span><span
-  style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
-  </td>
-  <td width=725 valign=top style='width:543.8pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-left:-37.65pt'><b><span style='mso-fareast-font-family:
-  "Times New Roman"'>Focus <span class=SpellE>Focus</span> region centers</span></b><span
-  style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>If not empty, increase frequency steps outside listed regions </p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:27.0pt;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td width=14 valign=top style='width:.15in;padding:.75pt .75pt .75pt .75pt'>
-  <p><o:p>&nbsp;</o:p></p>
-  </td>
-  <td width=424 valign=top style='width:317.7pt;padding:.75pt .75pt .75pt .75pt'>
-  <table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:
-   1.5pt;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
-   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-    <td width=34 valign=top style='width:25.5pt;padding:.75pt .75pt .75pt .75pt'>
-    <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1059"
-    src="../../Documentation/Draft/cdbl.png" alt=cdbl></span></p>
-    </td>
-    <td width=301 valign=top style='width:225.45pt;padding:.75pt .75pt .75pt .75pt'>
-    <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Regions
-    width</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-    <p>Width of focus regions</p>
-    </td>
-   </tr>
-  </table>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal style='margin-left:1.0in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><o:p>&nbsp;</o:p></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
-  </td>
-  <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1058"
-  src="../../Documentation/Draft/ci32.png" alt=ci32></span></p>
-  </td>
-  <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Out-of-focus
-  step acceleration</span></b><span style='mso-fareast-font-family:"Times New Roman"'>
-  <o:p></o:p></span></p>
-  <p>If &gt; 1, increase frequency steps outside listed regions by this factor</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><o:p>&nbsp;</o:p></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><o:p>&nbsp;</o:p></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1057"
-  src=cbool.png alt=cbool></span></p>
-  </td>
-  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>View
-  XY Plot</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>View latest spectrum file</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1056"
-  src=i1dcclst.png alt=i1dcclst></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Spectrum
-  plot</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Latest spectrum</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1055"
-  src=ipath.png alt=ipath></span></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Spectrum
-  File</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Latest spectrum file</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
-display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><o:p>&nbsp;</o:p></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
-  </td>
-  <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1054"
-  src="../../Documentation/Draft/idbl.png" alt=idbl></span></p>
-  </td>
-  <td valign=top style='padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Sweep
-  duration</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Estimated duration of single spectrum recording, sec</p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal align=center style='text-align:center'><span
-style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
-
-<h2><a name="Line_Detector.lvclass:Actor_Core.vi"></a><span style='mso-fareast-font-family:
-"Times New Roman"'><o:p>&nbsp;</o:p></span></h2>
-
-<h2><span style='mso-fareast-font-family:"Times New Roman"'>Line Detector<o:p></o:p></span></h2>
-
-<p>Line Detector module finds amplitude peaks in spectrum file and fits complex
-Lorentzian around peaks </p>
-
-<p>Each individual resonance parameters are determined via non-linear curve fit
-of the signal data in complex <span class=GramE>representation </span><!--[if gte msEquation 12]><m:oMath><i
- style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>Z</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)=</m:r><m:r>X</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)+</m:r><m:r>iY</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)=</m:r><m:r>M</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)</m:r></span></i><m:sSup><m:sSupPr><span
-   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
-   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
-   normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i style='mso-bidi-font-style:
-   normal'><span style='font-family:"Cambria Math",serif'><m:r>e</m:r></span></i></m:e><m:sup><i
-   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>i&#966;</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)</m:r></span></i></m:sup></m:sSup></m:oMath><![endif]--><![if !msEquation]><span
-style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
-mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
-position:relative;top:17.5pt;mso-text-raise:-17.5pt;mso-ansi-language:EN-US;
-mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shapetype
- id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
- path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+measurements etc. Active modules are selected via &#8220;Select Item&#8230;&#8221;
+drop-down menu. Module configuration panels are accessed by clicking on gear
+icon to the right of the module name.</p>
+
+<p><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
  <v:stroke joinstyle="miter"/>
  <v:formulas>
   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
@@ -1508,11 +850,645 @@ mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shapet
  </v:formulas>
  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
  <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:179.25pt;
- height:28.5pt'>
- <v:imagedata src="LabActor_Help_files/image001.png" o:title="" chromakey="white"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1090" type="#_x0000_t75"
+ style='width:468pt;height:219.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LabActor_Help_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=293
+src="LabActor_Help_files/image011.jpg" v:shapes="Picture_x0020_1"><![endif]></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1089"
+  src=c1dstr.png alt=c1dstr></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Monitor<span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b>List
+  of active measurement modules<span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1088"
+  src=cbool.png alt=cbool></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Start
+  <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span
+  class=SpellE>Start</span> measurement<span style='mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1087"
+  src=cbool.png alt=cbool></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Stop
+  <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span
+  class=SpellE>Stop</span> measurement</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1086"
+  src=cbool.png alt=cbool></span><o:p></o:p></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Pause<span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span
+  class=SpellE>Pause</span> measurement<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1085"
+  src=cbool.png alt=cbool></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>View
+  <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span
+  class=SpellE>View</span> Monitor data file</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1084"
+  src=cbool.png alt=cbool></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Read
+  <span class=SpellE>cfg</span></span></b><span style='mso-fareast-font-family:
+  "Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;</span></span>Read application configuration
+  from file</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1083"
+  src=cbool.png alt=cbool></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Write
+  <span class=SpellE>cfg</span></span></b><span style='mso-fareast-font-family:
+  "Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Write
+  application configuration to file</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1082"
+  src=cbool.png alt=cbool></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Monitor
+  configuration</span></b><span style='mso-fareast-font-family:"Times New Roman"'>
+  <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Open
+  Monitor configuration</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1081"
+  src=cbool.png alt=cbool></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Exit</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span
+  class=SpellE>Exit</span> application</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1080"
+  src=cbool.png alt=cbool></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Clear
+  log</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;</span></span>Clear error log</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1079"
+  src=ibool.png alt=ibool></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Monitor
+  Running</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Measurement
+  state</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1078"
+  src=ipath.png alt=ipath></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Monitor
+  File</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Latest
+  Monitor data file name</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1077"
+  src=istr.png alt=istr></span></p>
+  </td>
+  <td width=587 valign=top style='width:438.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Error
+  log</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Error
+  messages <o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal><a name="Monitor_Controller.lvclass:Actor_Core.vi"></a><b><span
+style='font-size:18.0pt;mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Monitor <o:p></o:p></span></h2>
+
+<p>Configure measurement flow</p>
+
+<p><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_8"
+ o:spid="_x0000_i1076" type="#_x0000_t75" style='width:108.75pt;height:271.5pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LabActor_Help_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=145 height=362
+src="LabActor_Help_files/image003.png" v:shapes="Picture_x0020_8"><![endif]></span></p>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=0
+ style='width:481.5pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+ mso-padding-alt:0in 5.75pt 0in 5.75pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1075"
+  src=ccclst.png alt=ccclst></span></p>
+  </td>
+  <td width=607 colspan=3 valign=top style='width:454.9pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Configuration</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Monitor
+  configuration</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=607 colspan=3 valign=top style='width:454.9pt;padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1074"
+  src=cdbl.png alt=cdbl></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Update period</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Request data
+  collection this often<span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=607 colspan=3 valign=top style='width:454.9pt;padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1073"
+  src=ci32.png alt=ci32></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Repeat times</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Complete
+  this many measurements then stop (or keep going if &lt;0)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-row-margin-right:16.45pt'>
+  <td width=585 colspan=2 valign=top style='width:438.45pt;padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1072"
+  src=cbool.png alt=cbool></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Open plot</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Open
+  new Monitor data plot on start</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=22><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes;mso-row-margin-right:16.45pt'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1071"
+  src=cdbl.png alt=cdbl></span></p>
+  </td>
+  <td width=550 valign=top style='width:411.7pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>File
+  defragment period</span></b><span style='mso-fareast-font-family:"Times New Roman"'>
+  <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Defragment
+  Monitor data file this often when running</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=22><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <![if !supportMisalignedColumns]>
+ <tr height=0>
+  <td width=35 style='border:none'></td>
+  <td width=35 style='border:none'></td>
+  <td width=550 style='border:none'></td>
+  <td width=22 style='border:none'></td>
+ </tr>
+ <![endif]>
+</table>
+
+<p class=MsoNormal style='text-indent:27.0pt'><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=0
+ style='width:6.75in;margin-left:21.75pt;border-collapse:collapse;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:29.9pt'>
+  <td width=648 colspan=3 valign=top style='width:6.75in;padding:.75pt .75pt .75pt .75pt;
+  height:29.9pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1070"
+  src=cbool.png alt=cbool></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Timestamp data points</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span style='display:none;
+  mso-hide:all'>Adds timestamp group corresponding to data points</span></span><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;mso-row-margin-right:158.55pt'>
+  <td width=32 valign=top style='width:24.0pt;padding:.75pt .75pt .75pt .75pt'>
+  <p style='margin-right:-7.5pt;text-indent:-1.5pt'><span style='mso-no-proof:
+  yes'><img width=32 height=16 id="_x0000_i1069" src=cdbl.png alt=cdbl></span><o:p></o:p></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Re-plot rate limit</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;</span></span>Limits update rate of plot
+  windows <o:p></o:p></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=211><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='mso-fareast-font-family:
+"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal><a name="Spectrum_Recorder_too.lvclass:Actor_Core"></a><b><span
+style='font-size:18.0pt;mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Spectrum Recorder<o:p></o:p></span></h2>
+
+<p>Spectrum Recorder module sweeps frequency and records complex response using
+Red Pitaya. The sweep frequency increment is either uniform and equal to
+Frequency step, or equal to Frequency step<span style='mso-no-proof:yes'> only
+inside defined focus regions and </span>Frequency step*acceleration factor
+elsewhere<span style='mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_68"
+ o:spid="_x0000_i1068" type="#_x0000_t75" style='width:468pt;height:376.5pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LabActor_Help_files/image004.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=502
+src="LabActor_Help_files/image012.jpg" v:shapes="Picture_x0020_68"><![endif]></span></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width=0 style='width:445.0pt;
+ mso-cellspacing:1.5pt;margin-left:27.75pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=6 valign=top style='width:2.5pt;padding:.75pt .75pt .75pt .75pt'>
+  <p><o:p>&nbsp;</o:p></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
+"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=0
+ style='width:613.55pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+ mso-padding-alt:0in 5.75pt 0in 5.75pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-row-margin-right:303.9pt'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1067"
+  src=ccclst.png alt=ccclst></span></p>
+  </td>
+  <td width=575 valign=top style='width:266.75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Configuration</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Spectrum
+  recorder configuration</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-row-margin-right:303.9pt'>
+  <td width=575 valign=top style='width:266.75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1066"
+  src=cdbl.png alt=cdbl></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Start frequency</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Spectrum
+  starting frequency</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-row-margin-right:303.9pt'>
+  <td width=575 valign=top style='width:266.75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1065"
+  src=cdbl.png alt=cdbl></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>End frequency</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Spectrum
+  ending frequency</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-row-margin-right:303.9pt'>
+  <td width=575 valign=top style='width:266.75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1064"
+  src=cdbl.png alt=cdbl></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Output amplitude</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>Sets
+  digital output amplitude<o:p></o:p></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-row-margin-right:303.9pt'>
+  <td width=575 valign=top style='width:266.75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1063"
+  src=cdbl.png alt=cdbl></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Coarse step<span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></b>Coarse frequency increment</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-row-margin-right:303.9pt'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1062"
+  src=cdbl.png alt=cdbl></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Fine step<span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b>If
+  &lt; coarse<span style='mso-spacerun:yes'>&nbsp; </span>and &gt; 0, increase
+  frequency steps inside listed regions by <span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>this
+  factor<o:p></o:p></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-row-margin-right:303.9pt'>
+  <td width=575 valign=top style='width:266.75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1061"
+  src=cbool.png alt=cbool></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Clear <span class=SpellE>rgs</span> on
+  start</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;</span></span>Empties fine region&#8217;s
+  centers array at the start of the measurements<o:p></o:p></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:7;mso-row-margin-right:303.9pt'>
+  <td width=575 valign=top style='width:266.75pt;padding:.75pt .75pt .75pt .75pt'>
+  <table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:
+   1.5pt;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;
+    height:2.25pt'>
+    <td width=37 valign=top style='width:25.5pt;padding:.75pt .75pt .75pt .75pt;
+    height:2.25pt'>
+    <p style='margin-left:-6.0pt;tab-stops:3.0pt'><b style='mso-bidi-font-weight:
+    normal'><span style='mso-no-proof:yes'><img width=32 height=16
+    id="_x0000_i1060" src="../../Documentation/Draft/cdbl.png" alt=cdbl></span></b><b
+    style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+    </td>
+    <td width=304 valign=top style='width:225.45pt;padding:.75pt .75pt .75pt .75pt;
+    height:2.25pt'>
+    <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Regions
+    width</span></b><b style='mso-bidi-font-weight:normal'><span
+    style='mso-fareast-font-family:"Times New Roman"'> </span></b><span
+    class=SpellE>Width</span> of fine regions<b style='mso-bidi-font-weight:
+    normal'><o:p></o:p></b></p>
+    </td>
+   </tr>
+  </table>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:8;mso-row-margin-right:303.9pt'>
+  <td width=575 valign=top style='width:266.75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p><b style='mso-bidi-font-weight:normal'><span style='mso-no-proof:yes'><img
+  width=32 height=16 id="_x0000_i1059" src=cdbl.png alt=cdbl></span></b><b><span
+  style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Step duration</span></b><b
+  style='mso-bidi-font-weight:normal'><span style='mso-fareast-font-family:
+  "Times New Roman"'> </span></b>Interval between frequency increments<b
+  style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:9;mso-row-margin-right:303.9pt'>
+  <td width=575 valign=top style='width:266.75pt;padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1058"
+  src=cdbl.png alt=cdbl></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Pause between scans</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;</span></span>Pause duration after each
+  frequency scan before starting next scan <o:p></o:p></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:10;mso-row-margin-right:303.9pt'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1057"
+  src=cstr.png alt=cstr></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Address </span></b>Network address of
+  Red Pitaya</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:11;mso-row-margin-right:303.9pt'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1056"
+  src=cbool.png alt=cbool></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Open plot</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> </span>Open new spectrum
+  plot window at the start of measurements</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=784 colspan=2 valign=top style='width:570.65pt;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='mso-no-proof:yes'><img width=32 height=16
+  id="_x0000_i1055" src="../../Documentation/Draft/c1ddbl.png" alt=c1ddbl></span><b><span
+  style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Focus <span class=SpellE>Focus</span>
+  region centers</span></b><span style='mso-fareast-font-family:"Times New Roman"'>
+  </span>If not empty, increase frequency steps outside listed regions </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13;mso-row-margin-right:303.9pt'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1054"
+  src=cstr.png alt=cstr></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Append measurements</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> </span>Names of other
+  modules which results will be added to spectrum files<o:p></o:p></p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:14;mso-row-margin-right:303.9pt'>
+  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1053"
+  src=cbool.png alt=cbool></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span>View<span
+  style='mso-spacerun:yes'>&nbsp; </span></span></b><span class=SpellE>View</span>
+  latest spectrum file</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:15;mso-row-margin-right:303.9pt'>
+  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1052"
+  src=i1dcclst.png alt=i1dcclst></span><b><span style='mso-fareast-font-family:
+  "Times New Roman"'><span style='mso-spacerun:yes'>&nbsp;&nbsp; </span>Spectrum
+  plot</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <span
+  style='mso-spacerun:yes'>&nbsp;</span></span>Latest spectrum</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:16;mso-row-margin-right:303.9pt'>
+  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1051"
+  src=ipath.png alt=ipath></span><b><span style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp; </span>Spectrum File</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> </span>Latest spectrum
+  file</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='mso-yfti-irow:17;mso-yfti-lastrow:yes;mso-row-margin-right:303.9pt'>
+  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1050"
+  src="../../Documentation/Draft/idbl.png" alt=idbl></span><b><span
+  style='mso-fareast-font-family:"Times New Roman"'><span
+  style='mso-spacerun:yes'>&nbsp;</span>Sweep duration</span></b><span
+  style='mso-fareast-font-family:"Times New Roman"'> </span>Estimated duration
+  of single spectrum recording, sec</p>
+  </td>
+  <td style='mso-cell-special:placeholder;border:none;padding:0in 0in 0in 0in'
+  width=405><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal><a name="Line_Detector.lvclass:Actor_Core.vi"></a><b><span
+style='font-size:18.0pt;mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+
+<h2><span style='mso-fareast-font-family:"Times New Roman"'>Resonance Detector<o:p></o:p></span></h2>
+
+<p>Resonance Detector module finds amplitude peaks in spectrum file and fits
+complex Lorentzian around peaks </p>
+
+<p>Each individual resonance parameters are determined via non-linear curve fit
+of the signal data in complex <span class=GramE>representation </span><!--[if gte msEquation 12]><m:oMath><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>Z</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)=</m:r><m:r>X</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)+</m:r><m:r>iY</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)=</m:r><m:r>M</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)</m:r></span></i><m:sSup><m:sSupPr><span
+   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+   normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i style='mso-bidi-font-style:
+   normal'><span style='font-family:"Cambria Math",serif'><m:r>e</m:r></span></i></m:e><m:sup><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>i&#966;</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)</m:r></span></i></m:sup></m:sSup></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:17.5pt;mso-text-raise:-17.5pt;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:179.25pt;height:28.5pt'>
+ <v:imagedata src="LabActor_Help_files/image006.png" o:title="" chromakey="white"/>
 </v:shape><![endif]--><![if !vml]><img width=239 height=38
-src="LabActor_Help_files/image002.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>,
+src="LabActor_Help_files/image013.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>,
 where&#8217;re<span style='mso-spacerun:yes'>&nbsp; </span><i style='mso-bidi-font-style:
 normal'>X</i> is &#8220;Signal X&#8221;, <i style='mso-bidi-font-style:normal'>Y</i>
 is &#8220;Signal Y&#8221;, <i style='mso-bidi-font-style:normal'>M</i> is
@@ -1525,9 +1501,9 @@ mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
 position:relative;top:17.5pt;mso-text-raise:-17.5pt;mso-ansi-language:EN-US;
 mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
  id="_x0000_i1025" type="#_x0000_t75" style='width:8.25pt;height:27.75pt'>
- <v:imagedata src="LabActor_Help_files/image003.png" o:title="" chromakey="white"/>
+ <v:imagedata src="LabActor_Help_files/image008.png" o:title="" chromakey="white"/>
 </v:shape><![endif]--><![if !vml]><img width=11 height=37
-src="LabActor_Help_files/image004.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+src="LabActor_Help_files/image021.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
 style='mso-spacerun:yes'>&nbsp;</span>is phase, and <i style='mso-bidi-font-style:
 normal'>f </i>is frequency. The resonance fit model <span class=GramE>is </span><!--[if gte msEquation 12]><m:oMath><i
  style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
@@ -1578,9 +1554,9 @@ mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
 position:relative;top:22.5pt;mso-text-raise:-22.5pt;mso-ansi-language:EN-US;
 mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
  id="_x0000_i1025" type="#_x0000_t75" style='width:108.75pt;height:39pt'>
- <v:imagedata src="LabActor_Help_files/image005.png" o:title="" chromakey="white"/>
+ <v:imagedata src="LabActor_Help_files/image010.png" o:title="" chromakey="white"/>
 </v:shape><![endif]--><![if !vml]><img width=145 height=52
-src="LabActor_Help_files/image006.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>,
+src="LabActor_Help_files/image022.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>,
 with fit parameters as follows: <i style='mso-bidi-font-style:normal'>f</i><sub>0</sub>
 is center frequency, <!--[if gte msEquation 12]><m:oMath><i style='mso-bidi-font-style:
  normal'><span style='font-family:"Cambria Math",serif'><m:r>&#947;</m:r><m:r> </m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
@@ -1591,9 +1567,9 @@ mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
 position:relative;top:17.5pt;mso-text-raise:-17.5pt;mso-ansi-language:EN-US;
 mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
  id="_x0000_i1025" type="#_x0000_t75" style='width:9pt;height:27.75pt'>
- <v:imagedata src="LabActor_Help_files/image007.png" o:title="" chromakey="white"/>
+ <v:imagedata src="LabActor_Help_files/image015.png" o:title="" chromakey="white"/>
 </v:shape><![endif]--><![if !vml]><img width=12 height=37
-src="LabActor_Help_files/image008.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>is
+src="LabActor_Help_files/image023.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>is
 resonance half-width, <i style='mso-bidi-font-style:normal'>A</i> is amplitude,
 <i style='mso-bidi-font-style:normal'>&#952;</i> is phase, and <!--[if gte msEquation 12]><m:oMath><m:sSub><m:sSubPr><span
    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
@@ -1608,27 +1584,28 @@ mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
 position:relative;top:19.0pt;mso-text-raise:-19.0pt;mso-ansi-language:EN-US;
 mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
  id="_x0000_i1025" type="#_x0000_t75" style='width:18pt;height:29.25pt'>
- <v:imagedata src="LabActor_Help_files/image009.png" o:title="" chromakey="white"/>
+ <v:imagedata src="LabActor_Help_files/image017.png" o:title="" chromakey="white"/>
 </v:shape><![endif]--><![if !vml]><img width=24 height=39
-src="LabActor_Help_files/image010.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+src="LabActor_Help_files/image024.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
 style='mso-spacerun:yes'>&nbsp;</span>is background signal.</p>
 
 <p>The initial guess for fit parameters can be provided by either a Peak finder
-or by last fit results obtained in preceding Line Detector processing run shown
-in Best fit results control. The Best fit results array can be manually edited
-by overwriting the values or inserting or deleting rows via right-click pop-up
-menu.<span style='mso-spacerun:yes'>&nbsp; </span>Each separate resonance is
-fitted within a frequency Fit window centered on its guessed f<sub>0</sub>.</p>
+or by last fit results obtained in preceding Resonance Detector processing run,
+which is stored in Best fit results control. The Best fit results array can be
+manually edited by overwriting the values or inserting or deleting rows via
+right-click pop-up menu.<span style='mso-spacerun:yes'>&nbsp; </span>Each
+separate resonance is fitted within a frequency Fit window centered on its
+guessed f<sub>0</sub>.</p>
 
-<p>Line Detector can optionally send the updated the list of focus regions (<i
-style='mso-bidi-font-style:normal'>f</i><sub>0</sub>) to Spectrum Recorder, in
-other words to follow peaks. The update is delayed depending on how full Red
+<p>Resonance Detector can optionally send the updated the list of focus regions
+(<i style='mso-bidi-font-style:normal'>f</i><sub>0</sub>) to Spectrum Recorder,
+in other words to follow peaks. The update is delayed depending on how full Red
 Pitaya input buffer is.<span style='mso-no-proof:yes'> <!--[if gte vml 1]><v:shape
- id="Picture_x0020_1" o:spid="_x0000_i1053" type="#_x0000_t75" style='width:468pt;
- height:286.5pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="LabActor_Help_files/image011.png" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=624 height=382
-src="LabActor_Help_files/image012.jpg" v:shapes="Picture_x0020_1"><![endif]></span></p>
+ id="Picture_x0020_80" o:spid="_x0000_i1049" type="#_x0000_t75" style='width:468pt;
+ height:288.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LabActor_Help_files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=385
+src="LabActor_Help_files/image025.jpg" v:shapes="Picture_x0020_80"><![endif]></span></p>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
@@ -1637,7 +1614,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1052"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1048"
   src=cpath.png alt=cpath></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1655,7 +1632,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1051"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1047"
   src=ccclst.png alt=ccclst></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1673,7 +1650,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1050"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1046"
   src="../../Documentation/Draft/cenum.png" alt=cenum></span></p>
   </td>
   <td colspan=4 valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1693,7 +1670,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  </tr>
  <tr style='mso-yfti-irow:2'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1049"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1045"
   src=cdbl.png alt=cdbl></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1717,7 +1694,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  </tr>
  <tr style='mso-yfti-irow:4'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1048"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1044"
   src="../../Documentation/Draft/cdbl.png" alt=cdbl></span></p>
   </td>
   <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1739,7 +1716,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  </tr>
  <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1047"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1043"
   src=cdbl.png alt=cdbl></span></p>
   </td>
   <td colspan=3 valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1759,7 +1736,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1046"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1042"
   src="../../Documentation/Draft/cenum.png" alt=cenum></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1778,7 +1755,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  </tr>
  <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1045"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1041"
   src=cenum.png alt=cenum></span></p>
   </td>
   <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1796,7 +1773,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1044"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1040"
   src=cenum.png alt=cenum></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1814,7 +1791,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1043"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1039"
   src=cdbl.png alt=cdbl></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1832,7 +1809,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1042"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1038"
   src=cdbl.png alt=cdbl></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1853,7 +1830,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1041"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1037"
   src=cdbl.png alt=cdbl></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1873,10 +1850,10 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1040"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1036"
   src=cstr.png alt=cstr></span></p>
   </td>
-  <td colspan=3 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Spectrum
   recorder name</span></b><span style='mso-fareast-font-family:"Times New Roman"'>
   <o:p></o:p></span></p>
@@ -1885,82 +1862,42 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  </tr>
  <tr style='mso-yfti-irow:1'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1039"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1035"
   src="../../Documentation/Draft/cbool.png" alt=cbool></span></p>
   </td>
-  <td colspan=4 valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <td colspan=3 valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Follow
   peaks</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
   <p>Auto-update Spectrum Recorder focus regions with best fit results</p>
   </td>
  </tr>
- <tr style='mso-yfti-irow:2'>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1038"
-  src="../../Documentation/Draft/cbool.png" alt=cbool></span></p>
-  </td>
-  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Create
-  rusin.dat</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Auto-create rusin.dat</p>
-  </td>
-  <td style='padding:0in 5.4pt 0in 5.4pt'></td>
-  <td style='padding:0in 5.4pt 0in 5.4pt'></td>
- </tr>
- <tr style='mso-yfti-irow:3'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1037"
-  src="../../Documentation/Draft/cstr.png" alt=cstr></span></p>
+  <p><o:p>&nbsp;</o:p></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>...with
-  header </span></b><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
-  <p>Prepend rusin.dat with this header</p>
+  <p><o:p>&nbsp;</o:p></p>
   </td>
-  <td style='padding:0in 5.4pt 0in 5.4pt'></td>
-  <td style='padding:0in 5.4pt 0in 5.4pt'></td>
-  <td style='padding:0in 5.4pt 0in 5.4pt'></td>
- </tr>
- <tr style='mso-yfti-irow:4'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+  <td style='padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
   </td>
-  <td colspan=2 valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+  <td style='padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-fareast-font-family:
+  "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
   </td>
-  <td style='padding:0in 5.4pt 0in 5.4pt'></td>
-  <td style='padding:0in 5.4pt 0in 5.4pt'></td>
- </tr>
- <tr style='mso-yfti-irow:5'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
-  </td>
-  <td colspan=4 valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
-  </td>
-  <td colspan=3 valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
-  </td>
-  <td style='padding:0in 5.4pt 0in 5.4pt'></td>
  </tr>
  <![if !supportMisalignedColumns]>
  <tr height=0>
   <td width=37 style='border:none'></td>
-  <td width=357 style='border:none'></td>
-  <td width=26 style='border:none'></td>
-  <td width=26 style='border:none'></td>
+  <td width=58 style='border:none'></td>
+  <td width=349 style='border:none'></td>
   <td width=22 style='border:none'></td>
  </tr>
  <![endif]>
 </table>
 
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
@@ -1969,7 +1906,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1036"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1034"
   src=cbool.png alt=cbool></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -1983,18 +1920,6 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
 
-<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><o:p>&nbsp;</o:p></p>
-  </td>
-  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
-</table>
-
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
 
@@ -2002,7 +1927,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1035"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1033"
   src=i1dcclst.png alt=i1dcclst></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -2021,7 +1946,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1034"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1032"
   src=i1dcclst.png alt=i1dcclst></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -2041,7 +1966,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1033"
+  <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1031"
   src=i2ddbl.png alt=i2ddbl></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
@@ -2067,11 +1992,15 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
 <p><b style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;
 mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
 
-<p><b style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;
-mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+<b style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA;mso-no-proof:yes'><br clear=all style='mso-special-character:
+line-break;page-break-before:always'>
+</span></b>
 
-<p><b style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;
-mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
 
 <p><b style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;
 mso-no-proof:yes'>Data<span style='mso-spacerun:yes'>&nbsp; </span>Plot Module<o:p></o:p></span></b></p>
@@ -2081,14 +2010,12 @@ mso-no-proof:yes'>Data<span style='mso-spacerun:yes'>&nbsp; </span>Plot Module<o
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='margin-left:.5in'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="_x0000_i1032" type="#_x0000_t75" alt="XY WFRM Plot.lvclass:Actor Core.vi"
- style='width:462.75pt;height:285.75pt;visibility:visible'>
- <v:imagedata src="../../Documentation/Draft/XY_WFRM_Plot_lvclass_Actor_Corep.png"
-  cropbottom="20212f" cropleft="-1f" cropright="-799f"/>
-</v:shape><![endif]--><![if !vml]><img width=617 height=381
-src="LabActor_Help_files/image013.jpg" alt="XY WFRM Plot.lvclass:Actor Core.vi"
-v:shapes="_x0000_i1032"><![endif]></span><span style='mso-fareast-font-family:
-"Times New Roman"'><o:p></o:p></span></p>
+ id="Picture_x0020_81" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:468pt;
+ height:325.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LabActor_Help_files/image028.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=434
+src="LabActor_Help_files/image026.jpg" v:shapes="Picture_x0020_81"><![endif]></span><span
+style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
 "Times New Roman"'><o:p>&nbsp;</o:p></span></p>
@@ -2098,7 +2025,7 @@ v:shapes="_x0000_i1032"><![endif]></span><span style='mso-fareast-font-family:
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-  "Times New Roman";mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1031"
+  "Times New Roman";mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1029"
   src="../../Documentation/Draft/c1dpath.png" alt=c1dpath></span><span
   style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
   </td>
@@ -2124,7 +2051,7 @@ v:shapes="_x0000_i1032"><![endif]></span><span style='mso-fareast-font-family:
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-  "Times New Roman";mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1030"
+  "Times New Roman";mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1028"
   src="../../Documentation/Draft/ci32.png" alt=ci32></span><span
   style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
   </td>
@@ -2147,7 +2074,7 @@ v:shapes="_x0000_i1032"><![endif]></span><span style='mso-fareast-font-family:
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-  "Times New Roman";mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1029"
+  "Times New Roman";mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1027"
   src="../../Documentation/Draft/c1di32.png" alt=c1di32></span><span
   style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
   </td>
@@ -2171,7 +2098,7 @@ v:shapes="_x0000_i1032"><![endif]></span><span style='mso-fareast-font-family:
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-  "Times New Roman";mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1028"
+  "Times New Roman";mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1026"
   src="../../Documentation/Draft/cenum.png" alt=cenum></span><span
   style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
   </td>
@@ -2193,7 +2120,7 @@ v:shapes="_x0000_i1032"><![endif]></span><span style='mso-fareast-font-family:
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-  "Times New Roman";mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1027"
+  "Times New Roman";mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1025"
   src="../../Documentation/Draft/ci32.png" alt=ci32></span><span
   style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
   </td>
@@ -2210,14 +2137,6 @@ v:shapes="_x0000_i1032"><![endif]></span><span style='mso-fareast-font-family:
 
 <p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
 "Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 
 </div>
 

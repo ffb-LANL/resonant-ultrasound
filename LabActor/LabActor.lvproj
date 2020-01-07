@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="18008000">
+<Project Type="Project" LVVersion="19008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
@@ -37,6 +37,7 @@
 					<Item Name="Plot.lvclass" Type="LVClass" URL="../Plots/Plot/Plot.lvclass"/>
 					<Item Name="XY Plot.lvclass" Type="LVClass" URL="../Plots/XY Plot/XY Plot.lvclass"/>
 					<Item Name="XY WFRM Plot.lvclass" Type="LVClass" URL="../Plots/XY WFRM Plot/XY WFRM Plot.lvclass"/>
+					<Item Name="TDMS Properties.lvclass" Type="LVClass" URL="../Plots/TDMS Properties/TDMS Properties.lvclass"/>
 				</Item>
 				<Item Name="Logger" Type="Folder">
 					<Item Name="Messages" Type="Folder">
@@ -51,6 +52,9 @@
 							<Item Name="Init Response Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Init Response Msg/Init Response Msg.lvclass"/>
 						</Item>
 						<Item Name="Process Controller.lvclass" Type="LVClass" URL="../Controllers/Process Controller/Process Controller.lvclass"/>
+					</Item>
+					<Item Name="Messages" Type="Folder">
+						<Item Name="Open TDMS Properties Msg.lvclass" Type="LVClass" URL="../Controllers/Application Controller Messages/Open TDMS Properties Msg/Open TDMS Properties Msg.lvclass"/>
 					</Item>
 					<Item Name="Pulse Controller.lvclass" Type="LVClass" URL="../Controllers/Pulse Controller/Pulse Controller.lvclass"/>
 					<Item Name="Monitor Controller.lvclass" Type="LVClass" URL="../Controllers/Monitor Controller/Monitor Controller.lvclass"/>
@@ -75,8 +79,6 @@
 				<Item Name="Instrument Actor.lvclass" Type="LVClass" URL="../Instrument Actor/Instrument Actor.lvclass"/>
 				<Item Name="Process Object.lvclass" Type="LVClass" URL="../Process Object/Process Object.lvclass"/>
 				<Item Name="Pulse Recorder.lvclass" Type="LVClass" URL="../Pulse Recorders/Pulse Recorder/Pulse Recorder.lvclass"/>
-				<Item Name="Sequence Controller.lvclass" Type="LVClass" URL="../Controllers/Sequence Controller/Sequence Controller.lvclass"/>
-				<Item Name="Sequence Element.lvclass" Type="LVClass" URL="../Sequence Elements/Sequence Element/Sequence Element.lvclass"/>
 				<Item Name="Timer.lvclass" Type="LVClass" URL="../Measurements/Timer/Timer.lvclass"/>
 			</Item>
 			<Item Name="Low-level" Type="Folder">
@@ -112,7 +114,7 @@
 					<Item Name="Truncate I32 to I 16.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Truncate I32 to I 16.vi"/>
 					<Item Name="Check output file.vi" Type="VI" URL="../Spectrum Recorder too/Check output file.vi"/>
 					<Item Name="clog2.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/clog2.vi"/>
-					<Item Name="Extend Array.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Extend Array.vi"/>
+					<Item Name="Extend Array.vim" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Extend Array.vim"/>
 					<Item Name="Get ring selector waveform.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Get ring selector waveform.vi"/>
 					<Item Name="Create plots - ring selector.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Create plots - ring selector.vi"/>
 				</Item>
@@ -140,13 +142,10 @@
 				</Item>
 				<Item Name="Attach to Sub-pannel Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Attach to Sub-pannel Msg/Attach to Sub-pannel Msg.lvclass"/>
 				<Item Name="File updated Msg.lvclass" Type="LVClass" URL="../Plots/XY Plot Messages/File updated Msg/File updated Msg.lvclass"/>
-				<Item Name="Insert Item Msg.lvclass" Type="LVClass" URL="../Interactive Tree Messages/Insert Item Msg/Insert Item Msg.lvclass"/>
-				<Item Name="Launch Object by Type Response Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Launch Object by Type Response Msg/Launch Object by Type Response Msg.lvclass"/>
 				<Item Name="Load Complete Msg.lvclass" Type="LVClass" URL="../Controllers/Application Controller Messages/Load Complete Msg/Load Complete Msg.lvclass"/>
 				<Item Name="Message Nested Object Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Message Nested Object Msg/Message Nested Object Msg.lvclass"/>
 				<Item Name="New Data File Msg.lvclass" Type="LVClass" URL="../Controllers/Application Controller Messages/New Data File Msg/New Data File Msg.lvclass"/>
 				<Item Name="Process Result Msg.lvclass" Type="LVClass" URL="../Process Object Messages/Process Result Msg/Process Result Msg.lvclass"/>
-				<Item Name="Remove Sequence Element Msg.lvclass" Type="LVClass" URL="../Controllers/Sequence Controller Messages/Remove Sequence Element Msg/Remove Sequence Element Msg.lvclass"/>
 				<Item Name="Set Frequency Msg.lvclass" Type="LVClass" URL="../Recorders/Lock-in Messages/Set Frequency Msg/Set Frequency Msg.lvclass"/>
 				<Item Name="Set Plot Type Msg.lvclass" Type="LVClass" URL="../Plots/XY WFRM Plot Messages/Set Plot Type Msg/Set Plot Type Msg.lvclass"/>
 				<Item Name="Set Point Msg.lvclass" Type="LVClass" URL="../Recorders/Temperature Controller Messages/Set Point Msg/Set Point Msg.lvclass"/>
@@ -162,9 +161,6 @@
 			</Item>
 			<Item Name="Test" Type="Folder"/>
 		</Item>
-		<Item Name="Measure App" Type="Folder">
-			<Item Name="Measure App.lvclass" Type="LVClass" URL="../Measure App/Measure App.lvclass"/>
-		</Item>
 		<Item Name="LabActor" Type="Folder">
 			<Item Name="Messages" Type="Folder">
 				<Item Name="Write Monitor File Msg.lvclass" Type="LVClass" URL="../LabActor Messages/Write Monitor File Msg/Write Monitor File Msg.lvclass"/>
@@ -176,6 +172,7 @@
 			<Item Name="ResonanceSpectrometer.cfg" Type="Document" URL="../LabActor/ResonanceSpectrometer.cfg"/>
 			<Item Name="LabActor.ini" Type="Document" URL="../LabActor/LabActor.ini"/>
 			<Item Name="ResonanceSpectrometer.ini" Type="Document" URL="../LabActor/ResonanceSpectrometer.ini"/>
+			<Item Name="LabActor.ico" Type="Document" URL="../LabActor.ico"/>
 		</Item>
 		<Item Name="Post-Processors" Type="Folder">
 			<Item Name="Format Converter" Type="Folder">
@@ -293,6 +290,12 @@
 					<Item Name="Read Arduino Temperature Controller.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Arduino Temperature Controller/Read Arduino Temperature Controller.vi"/>
 					<Item Name="Test Arduino Temperature Controller.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Arduino Temperature Controller/Test Arduino Temperature Controller.vi"/>
 				</Item>
+				<Item Name="Fluke" Type="Folder">
+					<Item Name="Fluke 1586A Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Fluke/Fluke 1586A Driver.lvclass"/>
+					<Item Name="Test Fluke.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Fluke/Test Fluke.vi"/>
+					<Item Name="Fluke Recorder.lvclass" Type="LVClass" URL="../Recorders/Fluke/Fluke Recorder.lvclass"/>
+					<Item Name="Fluke Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Fluke/Fluke Configuration.ctl"/>
+				</Item>
 				<Item Name="Andeen-Hagerling Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/AH/Andeen-Hagerling Driver/Andeen-Hagerling Driver.lvclass"/>
 				<Item Name="Channel Scanner Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Channel Scanner Driver/Channel Scanner Driver.lvclass"/>
 				<Item Name="Cryo-Con Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Cryo-con/Cryo-Con Driver/Cryo-Con Driver.lvclass"/>
@@ -333,6 +336,7 @@
 					<Item Name="Lock-in.lvclass" Type="LVClass" URL="../Recorders/Lock-in/Lock-in.lvclass"/>
 					<Item Name="Find Red Pitaya Lock-ins.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Lock-in Driver/Find Red Pitaya Lock-ins.vi"/>
 					<Item Name="RP Lock-in Test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Lock-in Driver/RP Lock-in Test.vi"/>
+					<Item Name="Test RP Lockin Scale.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Lock-in Driver/Test RP Lockin Scale.vi"/>
 				</Item>
 				<Item Name="Quantum Design" Type="Folder">
 					<Item Name="Quantum Design.lvclass" Type="LVClass" URL="../Recorders/Quantum Design/Quantum Design.lvclass"/>
@@ -369,6 +373,8 @@
 			<Item Name="Find Visa Recorders.vi" Type="VI" URL="../Recorders/Find Visa Recorders.vi"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
+		<Item Name="Phase Test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Lock-in Driver/Phase Test.vi"/>
+		<Item Name="Array shortcut menu.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Test/Array shortcut menu.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niModInst Close Installed Devices Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niModInst/niModInst Close Installed Devices Session.vi"/>
@@ -436,6 +442,11 @@
 				<Item Name="GetTemperature.vi" Type="VI" URL="/&lt;instrlib&gt;/QDInstrument_LabView/QDInstrument.llb/GetTemperature.vi"/>
 				<Item Name="GetField.vi" Type="VI" URL="/&lt;instrlib&gt;/QDInstrument_LabView/QDInstrument.llb/GetField.vi"/>
 				<Item Name="GetPosition.vi" Type="VI" URL="/&lt;instrlib&gt;/QDInstrument_LabView/QDInstrument.llb/GetPosition.vi"/>
+				<Item Name="niScope Configure Trigger Glitch.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Configure/Trigger/niScope Configure Trigger Glitch.vi"/>
+				<Item Name="niScope trigger polarity.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope trigger polarity.ctl"/>
+				<Item Name="niScope glitch condition.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope glitch condition.ctl"/>
+				<Item Name="niScope Configure Trigger Runt.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Configure/Trigger/niScope Configure Trigger Runt.vi"/>
+				<Item Name="niScope Configure Trigger Width.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Configure/Trigger/niScope Configure Trigger Width.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -741,7 +752,6 @@
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
-				<Item Name="Get Type of Variant.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/GetType.llb/Get Type of Variant.vi"/>
 				<Item Name="Get Waveform Subset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Get Waveform Subset.vi"/>
 				<Item Name="getChannelList.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/getChannelList.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
@@ -750,7 +760,6 @@
 				<Item Name="GetSetShared.lvlib" Type="Library" URL="/&lt;vilib&gt;/express/express signal manip/GetorSetDDTAttributes/Shared VIs/GetSetShared.lvlib"/>
 				<Item Name="GoTo.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/GoTo.vi"/>
 				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
-				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="initFileContentsTree.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/initFileContentsTree.vi"/>
 				<Item Name="InitFromConfiguration.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/InitFromConfiguration.vi"/>
 				<Item Name="initHelpButtonVisibility.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/initHelpButtonVisibility.vi"/>
@@ -826,12 +835,7 @@
 				<Item Name="Time-Delayed Send Message.vi" Type="VI" URL="/&lt;vilib&gt;/ActorFramework/Time-Delayed Send Message/Time-Delayed Send Message.vi"/>
 				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="Type Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/GetType.llb/Type Enum.ctl"/>
 				<Item Name="UpdateBufferForMultiListBoxIfNecessary.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/UpdateBufferForMultiListBoxIfNecessary.vi"/>
-				<Item Name="UpdateListBoxAfterKeyEvent.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/UpdateListBoxAfterKeyEvent.vi"/>
-				<Item Name="UpdateScrollbarBeforeKeyEvent.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/UpdateScrollbarBeforeKeyEvent.vi"/>
-				<Item Name="VariantType to Type Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/GetType.llb/VariantType to Type Code.vi"/>
-				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="VISA Find Search Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Find Search Mode.ctl"/>
 				<Item Name="VISA Open Access Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Open Access Mode.ctl"/>
 				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
@@ -868,7 +872,6 @@
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
-				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
@@ -907,8 +910,15 @@
 				<Item Name="DAQmx Start Trigger (Time).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (Time).vi"/>
 				<Item Name="DAQmx Start Trigger (Analog Multi Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Start Trigger (Analog Multi Edge).vi"/>
 				<Item Name="DAQmx Reference Trigger (Analog Multi Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Reference Trigger (Analog Multi Edge).vi"/>
-				<Item Name="Merge Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Merge Errors.vi"/>
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
+				<Item Name="IB_RW_Convert_Path_to_Absolute.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/IB_RW_Project/IB_RW_Convert_Path_to_Absolute.vi"/>
+				<Item Name="IB_2019_2018_RW_Convert_Path_to_Relative.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/IB_RW_Project/Compatibility/IB_2019_2018_RW_Convert_Path_to_Relative.vi"/>
+				<Item Name="Merge Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Merge Errors.vi"/>
+				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
+				<Item Name="UpdateScrollbarBeforeKeyEvent.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/UpdateScrollbarBeforeKeyEvent.vi"/>
+				<Item Name="UpdateListBoxAfterKeyEvent.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/UpdateListBoxAfterKeyEvent.vi"/>
+				<Item Name="Report Error Msg.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/ActorFramework/Report Error Msg/Report Error Msg.lvclass"/>
+				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 			</Item>
 			<Item Name="Abbreviate TDMS Group Channel.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Abbreviate TDMS Group Channel.vi"/>
 			<Item Name="Acknowledge Post Process Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Acknowledge Post Process Msg/Acknowledge Post Process Msg.lvclass"/>
@@ -989,7 +999,6 @@
 			<Item Name="KeithleyMeter Function.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Meter/KeithleyMeter Function.ctl"/>
 			<Item Name="KeithleyMeter Init.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Meter/KeithleyMeter Init.vi"/>
 			<Item Name="LabActor Error.ctl" Type="VI" URL="../Template Module/LabActor Error.ctl"/>
-			<Item Name="Launch Object by Type Msg.lvclass" Type="LVClass" URL="../Controllers/Application Controller Messages/Launch Object by Type Msg/Launch Object by Type Msg.lvclass"/>
 			<Item Name="Letter to number.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Letter to number.vi"/>
 			<Item Name="Line Detector Create rusin_dat.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Create rusin_dat.vi"/>
 			<Item Name="Locate edges.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Locate edges.vi"/>
@@ -1034,7 +1043,6 @@
 			<Item Name="Plot Closed Msg.lvclass" Type="LVClass" URL="../Controllers/Application Controller Messages/Plot Closed Msg/Plot Closed Msg.lvclass"/>
 			<Item Name="Plot Indexes.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Controls/Plot Indexes.ctl"/>
 			<Item Name="Plot types.ctl" Type="VI" URL="../Plots/Plot types.ctl"/>
-			<Item Name="Point to Tree Item.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/GUI/Point to Tree Item.vi"/>
 			<Item Name="Populate and conf ethernet bus.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument/Populate and conf ethernet bus.vi"/>
 			<Item Name="Populate Recorder List.vi" Type="VI" URL="../Recorders/Populate Recorder List.vi"/>
 			<Item Name="Pulse Controller Configuration.ctl" Type="VI" URL="../Controllers/Pulse Controller/Pulse Controller Configuration.ctl"/>
@@ -1049,7 +1057,6 @@
 			<Item Name="Read Value.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/SRS/sr850/Read Value.vi"/>
 			<Item Name="Recall Value from TDMS.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/Recall Value from TDMS.vi"/>
 			<Item Name="Receiver format.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Transceiver/Receiver format.ctl"/>
-			<Item Name="Record.lvclass" Type="LVClass" URL="../Sequence Elements/Record/Record.lvclass"/>
 			<Item Name="Reduce WFRM.vim" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Reduce WFRM.vim"/>
 			<Item Name="Replace dt DBL.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Replace dt DBL.vi"/>
 			<Item Name="Replace dt I16.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Replace dt I16.vi"/>
@@ -1102,7 +1109,6 @@
 			<Item Name="Stream Segment.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Stream Segment.ctl"/>
 			<Item Name="Sub_2016_05_04_SinBias.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/Sub_2016_05_04_SinBias.vi"/>
 			<Item Name="Sweep Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Sweeper Driver/Sweep Configuration.ctl"/>
-			<Item Name="Sweep.lvclass" Type="LVClass" URL="../Sequence Elements/Sweep Sequence/Sweep.lvclass"/>
 			<Item Name="Synth Freq to Word.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/NHMFL Synthesizer/Synth Freq to Word.vi"/>
 			<Item Name="Synth Get Amplitude Clock.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/NHMFL Synthesizer/Synth Get Amplitude Clock.vi"/>
 			<Item Name="Synth Init DAQ Port.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/NHMFL Synthesizer/Synth Init DAQ Port.vi"/>
@@ -1137,7 +1143,6 @@
 			<Item Name="Write menu object array values.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Queued Listbox/Write menu object array values.vi"/>
 			<Item Name="Read Menu object array values.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Queued Listbox/Read Menu object array values.vi"/>
 			<Item Name="Filter Device List.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Device/Filter Device List.vi"/>
-			<Item Name="Sweep Sequence Configuration.ctl" Type="VI" URL="../Sequence Elements/Sweep Sequence/Sweep Sequence Configuration.ctl"/>
 			<Item Name="Set TDMS WFM Properties.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/Set TDMS WFM Properties.vi"/>
 			<Item Name="Start Measurements Command Msg.lvclass" Type="LVClass" URL="../LabActor Messages/Start Pulse Measurements Msg/Start Measurements Command Msg.lvclass"/>
 			<Item Name="Pulse Acquired Result.lvclass" Type="LVClass" URL="../Controllers/Application Controller Messages/Pulse Acquired Result/Pulse Acquired Result.lvclass"/>
@@ -1235,6 +1240,12 @@
 			<Item Name="Request type.ctl" Type="VI" URL="../Controllers/Process Controller/Request type.ctl"/>
 			<Item Name="Rescale Configuration.ctl" Type="VI" URL="../Post-Processors/Rescale/Rescale Configuration.ctl"/>
 			<Item Name="Filter VISA COM.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument/Filter VISA COM.vi"/>
+			<Item Name="Arduino Temperature Controller Set T.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Arduino Temperature Controller/Arduino Temperature Controller Set T.vi"/>
+			<Item Name="CDK_GLOBAL_STRINGS.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Installer/CDK_GLOBAL_STRINGS.vi"/>
+			<Item Name="Cryo-Con Get Settigns.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Cryo-con/Cryo-Con Get Settigns.vi"/>
+			<Item Name="VI Server Recorder.lvclass" Type="LVClass" URL="../Recorders/VI Server/VI Server Recorder.lvclass"/>
+			<Item Name="VI Server Configuration.ctl" Type="VI" URL="../Recorders/VI Server/VI Server Configuration.ctl"/>
+			<Item Name="Sequence Element.lvclass" Type="LVClass" URL="../Sequence Elements/Sequence Element/Sequence Element.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1250,9 +1261,9 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">124</Property>
+				<Property Name="Bld_version.build" Type="Int">140</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">4</Property>
+				<Property Name="Bld_version.minor" Type="Int">5</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabActor.exe</Property>
@@ -1261,7 +1272,8 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{57CCBC8E-3A63-4BAE-9574-579510E3F9BC}</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/LabActor/LabActor.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0AAF5224-8F68-4442-9A99-546AEF21F76E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Monitor Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
@@ -1410,14 +1422,14 @@
 				<Property Name="Source[5].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[5].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[5].type" Type="Str">VI</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Sequence Controller.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Dependencies']/Items in Memory/Sequence Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Sequence Element.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Dependencies']/Sequence Element.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[7].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[7].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[7].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -1506,7 +1518,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{630C6A79-7DB9-4C88-A629-CE71489D02DC}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">TDMS File Viewer.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TDMS File Viewer.exe</Property>
@@ -1515,7 +1527,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4C7AFB75-416D-471C-B6EB-82CECE7D9112}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E34AE698-2B24-4066-8C9E-ECE3CC9EB3CF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Low-level/Utilities/File/TDMS - File Viewer.vi</Property>
@@ -1539,17 +1551,14 @@
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{BE2EBF86-BE3A-4777-94F1-2610CA2962BC}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">ResonanceSpectrometer</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/ResonanceSpectrometer</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6D09FC58-9DB8-486B-961C-4F1C695F32F8}</Property>
-				<Property Name="Bld_version.build" Type="Int">80</Property>
+				<Property Name="Bld_version.build" Type="Int">86</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">4</Property>
-				<Property Name="Bld_version.patch" Type="Int">1</Property>
+				<Property Name="Bld_version.minor" Type="Int">5</Property>
 				<Property Name="Destination[0].destName" Type="Str">ResonanceSpectrometer.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/ResonanceSpectrometer/ResonanceSpectrometer.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -1557,7 +1566,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/ResonanceSpectrometer/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{5A1686DE-E0B6-46D8-B72A-F07D204025BB}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{761927F6-A831-4F6E-8AA8-0AC57C5336E2}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Monitor Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
@@ -1679,14 +1688,14 @@
 				<Property Name="Source[5].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[5].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[5].type" Type="Str">VI</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Sequence Controller.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Dependencies']/Items in Memory/Sequence Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Sequence Element.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Dependencies']/Sequence Element.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[7].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[7].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[7].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -1779,7 +1788,7 @@
 				<Property Name="INST_buildSpecName" Type="Str">ResonanceSpectrometer Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{4B7500B3-B3DA-484A-834D-5A7C75EDCB35}</Property>
 				<Property Name="INST_productName" Type="Str">ResonanceSpectrometer</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.8</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.12</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">18008012</Property>
 				<Property Name="MSI_arpCompany" Type="Str">LANL</Property>
