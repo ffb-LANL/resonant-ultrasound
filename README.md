@@ -23,4 +23,7 @@ C17076
 10. The spectrum data is saved in files shown in "Spectrum file" indicator in Spectrum Recorder module. TDMS files can be opened in Labview, Origin v 9.2 and later, Excel. npTDMS phyton etc.
 
 ## Network settings:
-The default Red Pitaya image configured with static IP 192.168.1.100 for Ethernet port.  The network settings can be changed by logging into Red Pitaya, e.g. using Putty, and editing /etc/dhcp/dhclient.conf, e.g. “vi /etc/dhcp/dhclient.conf”
+The Resonant Ultrasound Spectroscopy Software client communicates with Red Pitaya using Ethernet connection. The network address for Red Pitaya could be configured in the Spectrum Recorder module. In default configuration Red Pitaya attempts to obtain IP address from the network using DHCP. If DHCP fails, 
+the fall back static IP for Red Pitaya is 192.168.1.100, which is also the default Red Pitaya address in the Spectrum Recorder module. The default settings assume that Red Pitaya and host PC are connected to the same private subnet, e.g. 192.168.1.*/255.255.255.0
+
+The network settings can be changed by logging into Red Pitaya, e.g. using Putty, and editing /etc/dhcp/dhclient.conf, e.g. “vi /etc/dhcp/dhclient.conf”
