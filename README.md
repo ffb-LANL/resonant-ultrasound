@@ -11,7 +11,7 @@ Triad National Security, LLC. owns the copyright to Resonant Ultrasound Spectros
 C17076
 
 ## Instalation and Start-up
-1. Install LabVIEW runtime engine 2019 64bit (do not install SP1 version)
+1. Install LabVIEW runtime engine 2020 64bit
 2. Run ResonanceSpetrometer Installer.exe
 3. Write rus.img to microSD card using imager software (e.g. Win32 Disk Imager)
 4. Insert microSD card into Red Pitaya (with microSD contacts facing up), power it up.
