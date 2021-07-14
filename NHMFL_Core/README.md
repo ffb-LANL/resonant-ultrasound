@@ -1,2 +1,0 @@
-# DAQ
-Data Acquisition Code

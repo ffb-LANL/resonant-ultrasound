@@ -28,3 +28,11 @@ The Resonant Ultrasound Spectroscopy Software client communicates with Red Pitay
 the fall back static IP for Red Pitaya is 192.168.1.100, which is also the default Red Pitaya address in the Spectrum Recorder module. The default settings assume that Red Pitaya and host PC are connected to the same private subnet, e.g. 192.168.1.*/255.255.255.0
 
 The network settings can be changed by logging into Red Pitaya, e.g. using Putty, and editing /etc/dhcp/dhclient.conf, e.g. “vi /etc/dhcp/dhclient.conf”
+
+## Source Code
+
+The source code repostories are:
+
+LabActor framewwork: https://github.com/ffb-LANL/LabActor
+NHMFL Core libraries: https://github.com/ffb-LANL/NHMFL_Core
+Red Pitaya firmware: https://github.com/ffb-LANL/red-pitaya-notes
