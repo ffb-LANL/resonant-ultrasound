@@ -34,5 +34,7 @@ The network settings can be changed by logging into Red Pitaya, e.g. using Putty
 The source code repostories are:
 
 LabActor framewwork: https://github.com/ffb-LANL/LabActor
+
 NHMFL Core libraries: https://github.com/ffb-LANL/NHMFL_Core
+
 Red Pitaya firmware: https://github.com/ffb-LANL/red-pitaya-notes
